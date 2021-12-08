@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <title>Patient main</title>
+</head>
+
+<body>
+    <ul class="nav-ul">
+        <li class="nav"><a href="../patientpage.html">Home</a></li>
+        <li class="nav"><a href="#contact">Contact</a></li>
+        <li class="nav"><a href="../login.html">Logout</a></li>
+    </ul>
+    <div class="wrapper">
+        <div class="column">
+            <fieldset>
+                <legend>Patient Nr.2</legend>
+                <img src="images/gubbe.jpg" ; />
+            </fieldset>
+        </div>
+        <div class="column">
+            <fieldset>
+                <legend>Symptom:</legend>
+                <ul>
+                    <p id="symptom"></p>
+                    <p>Symptom2</p>
+                    <p>Symptom3</p>
+                </ul>
+            </fieldset>
+        </div>
+        <div class="column">
+            <fieldset>
+                <legend>Add new symptom:</legend>
+                <div id="register">
+                    <form action="#">
+                        <div class="form-rad">
+                            <label for="symptom">Symptom:</label>
+                            <input type="text" placeholder="Add symptom" name="symptom" id="symptom" data-required="true" data-error-message="Symptom m�ste l�ggas till!">
+                        </div>
+                        <div class="form-rad">
+                            <label for="datum">Date:</label>
+                            <input type="date" name="datum" data-required="true" data-error-message="Datumm m�ste l�ggas till!" />
+                        </div>
+                        <div class="form-rad">
+                            <input type="submit" value="Add symptom" id="submitbutton" />
+                        </div>
+                    </form>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-div">
+            <p class="p-footer">Website created for OOPA21-Halmstad By: </p>
+            <p class="p-footer">Daniel J, Hoa N, Kristian A, William R, Yana M.</p>
+        </div>
+    </footer>
+    <script>
+        function getSymptom() {
+            var input = document.getElementById("symptom").value;
+            let todayDate = new Date();
+            let todayDay = todayDate.getDate()
+            let todayMonth = todayDate.getMonth()
+            let todayYear = todayDate.getFullYear();
+            var logdate = "Loggat: Dag:" + todayDay + " Månad: " + todayMonth +" År: "+ todayYear;
+            var data = "Nytt symptom: "+input + " Tillagt datum:  \n" + logdate;
+            document.getElementById("symptom-p").innerHTML = data;
+        }
+    </script>
+</body>
+</html>

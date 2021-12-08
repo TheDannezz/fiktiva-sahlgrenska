@@ -1,0 +1,64 @@
+* {
+	font-family: Cambria
+}
+body {
+	margin:0;
+	padding:0;
+	background-color:#cccccc;
+	background-image:url("../images/loginBackground.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 1000px;
+	font-family: 'Arial';
+}
+h2{
+	text-align: center;
+	color:#2e6e89;
+	padding:20px;
+	opacity: 90%;
+	text-decoration: underline;
+}
+.login{
+	width:382px;
+	overflow: hidden;
+	margin: auto;
+	margin: 20 0 0 450px;
+	padding: 80px;
+	background: #2e6e89;
+	border-radius: 16px;
+}
+label{
+	color:#08ffd1;
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+#username{
+	width: 300px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	padding-left:8px;
+}
+#Pass{
+	width: 300px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	padding-left: 8px;
+}
+a{
+	float: right;
+	background-color: grey;
+}
+#log{
+	width: 200px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;
+    margin: 15px;
+    padding-left: 0px;  
+    color: blue;
+}
+
+

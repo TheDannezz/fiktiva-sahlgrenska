@@ -1,0 +1,89 @@
+* {
+    font-family: Cambria;
+    box-sizing:border-box;
+}
+body {
+    background-image: url("../images/loginBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width:1300px;
+}
+.nav {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display:block;
+}
+.column {
+    float: left;
+    width: 25%;
+    background-color: #909090;
+    opacity:90%;
+    border:solid;
+}
+.column-bottom {
+    opacity: 90%;
+    background-color: #909090;
+    width:50%;
+    margin:5px;
+    display:block;
+}
+div {
+    padding: 5px;
+}
+.wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+#register{
+    position:relative;
+    margin:20px auto;
+    border-radius:2px;
+ }
+.submitbutton {
+    text-transform: uppercase;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.footer-div {
+    text-align: center;
+    background-color: #5b5656;
+    opacity: 95%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.p-footer {
+    text-decoration-color: black;
+}

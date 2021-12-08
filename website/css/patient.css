@@ -1,0 +1,92 @@
+* {
+	font-family: Cambria
+}
+body {
+	background-image:url("../images/loginBackground.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 1000px;
+}
+.patientinfo .dataform .display-column3 {
+	width: 33% auto;
+}
+td,th{
+	border: 2px solid black;
+	padding:5px;
+}
+table{
+	width:100%;
+}
+#transparentBox{
+	margin: 50px;
+	background-color: #dddd;
+	padding:50px;
+	border:2px solid black;
+	opacity: 95%;
+	box-shadow: rgba(0,0,0,.1);
+	display:grid;
+	grid-template-columns: 50% 50%;
+}
+#patientinfo{
+	margin: 0px auto;
+	float:left;
+}
+#conditionParagraph{
+	margin-right:20px;
+}
+#selector{
+	margin-right:20px;
+}
+.bookingheadline{
+	color:black;
+}
+#dataform{
+	padding: 20px;
+	margin: 0 auto;
+	align-self:center;
+}
+form{
+	display:grid;
+	grid-row-gap:20px;
+}
+.form-field{
+	display:flex;
+	justify-content: space-between;
+
+}
+input,select{
+	padding:10px 15px;
+}
+.button{
+	background-color: rgba(0,0,0, .98);
+	color: #fff;
+	padding: 10px 20px;
+	border:none;
+	border-radius: 100px;
+	transition:ease-in;
+}
+.nav-li{
+	display:inline;
+	float:left;
+}
+.li-a{
+	display:block;
+	color:white;
+	text-align:center;
+	padding: 14px 16px;
+	text-decoration:none;
+}
+.li-a:hover{
+	background-color:#111;
+}
+nav-ul{
+	position:fixed;
+	top:0;
+	width:100%;
+	background-color:#333;
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}

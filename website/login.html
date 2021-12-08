@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/loginstyle.css" type="text/css">
+	<title>Login</title>
+</head>
+<body>
+	<h2> Sahlgrenska Login Page </h2><br>
+	<div class="login">
+		<form id="login" method="get" action="login.php">
+			<label>Username</label>
+			<input type="text" name="username" id="username" placeholder="Username //oopa21">
+			<br>
+			<label>Password</label>
+			<input type="Password" name="Pass" id="Pass" placeholder="Password: //1234">
+			<br>
+			<input type="button" name="log" id="log" value="Login" onclick="loginButton()">
+			<br>
+		</form>
+	</div>
+<footer>
+</footer>
+
+<script>
+	function loginButton(){
+	var adminName="oopa21"
+	var adminPass="1234"
+	var uName =document.getElementById("username").value;
+	var password=document.getElementById("Pass").value;
+	if (uName ==adminName && password ==adminPass){
+		alert("success");
+		window.location="homepage.html";
+		return false;
+	}
+}
+</script>
+</body>
+</html>
