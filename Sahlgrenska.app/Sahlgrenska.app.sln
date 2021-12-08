@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sahlgrenska.app", "Sahlgrenska.app.csproj", "{5B7F3A49-612F-4F3D-9068-12C79EEDE448}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B7F3A49-612F-4F3D-9068-12C79EEDE448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B7F3A49-612F-4F3D-9068-12C79EEDE448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B7F3A49-612F-4F3D-9068-12C79EEDE448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B7F3A49-612F-4F3D-9068-12C79EEDE448}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D4312A3-43CC-4B5C-AC9C-D26D1FE4F993}
+	EndGlobalSection
+EndGlobal
