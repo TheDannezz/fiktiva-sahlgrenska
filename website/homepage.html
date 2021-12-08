@@ -6,14 +6,17 @@
 	<link rel="stylesheet" href="css/homepage.css" type="text/css">
 	<title>Hem</title>
 </head>
-
+<!--Denna sida räknas för närvarande som homepage som kommer direkt efter man loggar in på första sidan.-->
 <body>
+	<!-- Basic navigation för att röra sig runt på hemsidan-->
 	<ul>
 	  <li><a  href="patientpage.html">Home</a></li>
 	  <li><a  href="#contact">Contact</a></li>
 	  <li><a  href="login.html">Logout</a></li>
 	</ul>
-
+	<!--Denna div listar de olika patienterna och länkar till varje patients egna hemsida
+		Tanken är att dessa kanske inte har en egen html sida utan hämtas i en
+		färdig html mall och med hjälp av javascript och displayar data direkt om man trycker på patientknappen.-->
 	<div class="maincontent">
 		<p><button class="button" onclick="document.location='patients/patient1.html'">Patient: Robert Gustafsson</button></p>
 		<p><button class="button" onclick="document.location='patients/patient2.html'">Patient: Gunvald Larsson</button></p>

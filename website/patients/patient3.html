@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
-    <title>Patient main</title>
+    <title>Patient Nr.3</title>
 </head>
 
 <body>
+    <!-- Navigation på hemsidan för att ta sig runt och navigera rätt-->
     <ul class="nav-ul">
         <li class="nav"><a href="../patientpage.html">Home</a></li>
         <li class="nav"><a href="#contact">Contact</a></li>
@@ -20,53 +21,112 @@
                 <img src="images/gubbe.jpg" ; />
             </fieldset>
         </div>
+        <!--Denna kolumn är en placeholder där symptomen läkaren eller sköterskan ska lägga till patientens fil -->
         <div class="column">
             <fieldset>
-                <legend>Symptom:</legend>
-                <ul>
-                    <p id="symptom">Symptom1</p>
-                    <p>Symptom2</p>
-                    <p>Symptom3</p>
-                </ul>
+                <legend>Nuvarande symptom:</legend>
+                <p id="p1"></p>
+                <p id="p2"></p>
+                <p id="p3"></p>
+                <p id="p4"></p>
             </fieldset>
         </div>
+        <!-- Denna kolumn är till för formuläret som tar input data och skickar det till paragraph för att visas dynamiskt på hemsidan
+            Tanken här är att det skickas till databasen eller en fil där vi kan lägga till och ta bort symptom allteftersom
+            vi behöver. Just nu fungerar det att lägga till symptom men är ej länkad till databas.-->
         <div class="column">
             <fieldset>
                 <legend>Add new symptom:</legend>
                 <div id="register">
-                    <form action="#">
+                    <form action="#" onsubmit="return false">
                         <div class="form-rad">
                             <label for="symptom">Symptom:</label>
                             <input type="text" placeholder="Add symptom" name="symptom" id="symptom" data-required="true" data-error-message="Symptom m�ste l�ggas till!">
                         </div>
                         <div class="form-rad">
-                            <label for="datum">Date:</label>
-                            <input type="date" name="datum" data-required="true" data-error-message="Datumm m�ste l�ggas till!" />
+                            <!--  <label for="datum">Date:</label>
+                            <input type="date" name="datum" data-required="true" data-error-message="Datum maste laggas till!" /> -->
                         </div>
                         <div class="form-rad">
-                            <input type="submit" value="Add symptom" id="submitbutton" />
+                            <button id="submitbutton" data-required="true" onclick="getSymptom()">Add first symptom </button>
+                        </div>
+                        <div class="form-rad">
+                            <button id="submitbutton" data-required="true" onclick="getSymptom2()">Add second symptom </button>
+                        </div>
+                        <div class="form-rad">
+                            <button id="submitbutton" data-required="true" onclick="getSymptom3()">Add third symptom </button>
+                        </div>
+                        <div class="form-rad">
+                            <input type="text" placeholder="Lägg till behandling för patienten" id="treatment-input" />
+                            <input type="submit" value="Add treatment" id="submitbutton" onclick="addTreatment()" />
                         </div>
                     </form>
                 </div>
             </fieldset>
         </div>
     </div>
+    <!-- -Denna kolumn sitter längst ner på sidan och visar information om patienten i form av text.
+     Tanken är att denna text ska hämtas från en patientfil som visar texten direkt i en egen div ruta utan att
+     fyllnadstexten ligger kodad i html-filen som den gör nu.-->
+    <div class="column-bottom">
+        <fieldset>
+            <legend>The patients current condition:</legend>
+            <div>
+                <p style="text-decoration-line:underline;">Beskrivning av patientens nuvarande tillstånd:</p>
+                <p id="condition">
+                    Denna text är tänkt att hämtas från en fil eller från databas där en input från fomuläret sparar texten i databasen/filen.
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    ..."
+                </p>
+                <p style="text-decoration-line:underline;">Patienten är bokad för följande behandlingar:</p>
+                <p id="p-treatments">
+                    Denna text ersätts när man skickar in ny behandlingsdata i formuläret ovan.
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    ..."
+                </p>
+            </div>
+        </fieldset>
+    </div>
     <footer>
+        <!-- Footer som visar gruppens medlemmar i alfabetsordning.-->
         <div class="footer-div">
-            <p class="p-footer">Website created for OOPA21-Halmstad By: </p>
-            <p class="p-footer">Daniel J, Hoa N, Kristian A, William R, Yana M.</p>
+            <p class="p-footer" style="text-decoration-line:underline;">Website created for OOPA21-Halmstad By: </p>
+            <p class="p-footer" style="text-decoration-line:underline;">Daniel J, Hoa N, Kristian A, William R, Yana M.</p>
         </div>
     </footer>
+    <!-- Följande skript tar inputen från formuläret i dokumentet och skickar det till det till paragraph-element på sidan och lägger till.
+        De globala variablerna är till för att skapa datum objekt så de kan kallas i funktionen eftersom de är genemnsamma.
+        Just nu är det tre separat funktioner som gör samma sak, Hemsidan är fungerande men skripten ska "refactor"
+        så att vi inte har multipla funktoner som gör samma sak.-->
     <script>
+        let data = "";
+        let todayDate = new Date();
+        let todayDay = todayDate.getDate()
+        let todayMonth = todayDate.getMonth()
+        let todayYear = todayDate.getFullYear();
+        var logdate = " Dag: " + todayDay + " Månad: " + todayMonth + " År: " + todayYear;
+
         function getSymptom() {
-            var input = document.getElementById("symptom").value;
-            let todayDate = new Date();
-            let todayDay = todayDate.getDate()
-            let todayMonth = todayDate.getMonth()
-            let todayYear = todayDate.getFullYear();
-            var logdate = "Loggat: Dag:" + todayDay + " Månad: " + todayMonth +" År: "+ todayYear;
-            var data = "Nytt symptom: "+input + " Tillagt datum:  \n" + logdate;
-            document.getElementById("symptom-p").innerHTML = data;
+            let input = document.getElementById("symptom").value;
+            data = "Nytt symptom: " + input + " Tillagt datum:  \n" + logdate;
+            document.getElementById("p1").innerHTML = data;
+        }
+        function getSymptom2() {
+            let input = document.getElementById("symptom").value;
+            data = "Nytt symptom: " + input + " Tillagt datum:  \n" + logdate;
+            document.getElementById("p2").innerHTML = data;
+        }
+        function getSymptom3() {
+            let input = document.getElementById("symptom").value;
+            data = "Nytt symptom: " + input + " Tillagt datum:  \n" + logdate;
+            document.getElementById("p3").innerHTML = data;
+        }
+        function addTreatment() {
+            let input = document.getElementById("treatment-input").value;
+            data = "Behandling som är bokad: " + input;
+            document.getElementById("p-treatments").innerHTML = data;
         }
     </script>
 </body>
