@@ -20,3 +20,25 @@ C:\Users\HP\source\repos\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app
 C:\Users\HP\source\repos\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app.dll
 C:\Users\HP\source\repos\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app.pdb
 C:\Users\HP\source\repos\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app.genruntimeconfig.cache
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app.dll
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app.pdb
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\bin\Debug\netcoreapp3.1\Sahlgrenska.app.exe
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\bin\Debug\netcoreapp3.1\Sahlgrenska.app.deps.json
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\bin\Debug\netcoreapp3.1\Sahlgrenska.app.runtimeconfig.json
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\bin\Debug\netcoreapp3.1\Sahlgrenska.app.runtimeconfig.dev.json
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\bin\Debug\netcoreapp3.1\Sahlgrenska.app.dll
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\bin\Debug\netcoreapp3.1\Sahlgrenska.app.pdb
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app.csproj.AssemblyReference.cache
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\BookRoomWindow.g.cs
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app_MarkupCompile.cache
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app_MarkupCompile.lref
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\BookRoomWindow.baml
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app.g.resources
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app.AssemblyInfoInputs.cache
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app.AssemblyInfo.cs
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app.csproj.CoreCompileInputs.cache
+C:\Workspace\Skola\Agil utveckling\Sahlgrenska.app\obj\Debug\netcoreapp3.1\Sahlgrenska.app.genruntimeconfig.cache

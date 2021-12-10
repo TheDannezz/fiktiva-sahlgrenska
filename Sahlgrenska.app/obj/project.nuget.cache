@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "QfhYRBNZA88tW7N1j0wgDcJwudq/46xOWODlBlElnDGFBzilPWpEtV7Y2oe9A86N/2UHSK+Qbyc/X0jYbeT7Og==",
+  "dgSpecHash": "lTUd1VKTHPQZxCNQJNvJP6UG0e0vFaizcBY7VKC8w8VMcgT5s3d9vacRjZ6D+PFujUBnTMv+t6UkzvbeeAYZNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\source\\repos\\Sahlgrenska.app\\Sahlgrenska.app.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Workspace\\Skola\\Agil utveckling\\Sahlgrenska.app\\Sahlgrenska.app.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\willi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
