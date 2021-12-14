@@ -1,0 +1,19 @@
+﻿<Window x:Class="Sahlgrenska.app.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sahlgrenska.app"
+        mc:Ignorable="d"
+        Title="Login" Height="350" Width="400">
+    <Grid>
+        <GroupBox Header="Sahlgrenska Login:" Margin="42,42,42,33"></GroupBox>
+        <Label Content="Username: " HorizontalAlignment="Left" Margin="52,85,0,0" VerticalAlignment="Top" Width="75" Height="27"/>
+        <Label Content="Password: " HorizontalAlignment="Left" Height="28" Margin="52,118,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock Height="20" HorizontalAlignment="Left" Margin="167,0,0,0" x:Name ="errormessage" VerticalAlignment="Center" Width="150"  OpacityMask="Crimson" Foreground="#FFE5572C" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="167,85,0,0" Name="usernamebox1" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="167,121,0,0" Name="passwordbox1" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <CheckBox HorizontalAlignment="Left" Content="Spara lösenord"  Margin="52,190,0,0" VerticalAlignment="Top" Width="110" Checked="CheckBox_Checked"/>
+        <Button Content="Logga in" HorizontalAlignment="Left" Margin="167,190,0,0" VerticalAlignment="Top" Width="101" Click="Button_Click"/>
+    </Grid>
+</Window>

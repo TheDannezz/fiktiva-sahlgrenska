@@ -36,5 +36,10 @@ namespace Sahlgrenska.app
             var bookRoomWindow = new BookRoomWindow(HospitalS);
             bookRoomWindow.Show();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            new LoginWindow().ShowDialog();
+        }
     }
 }
