@@ -7,11 +7,17 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="BookingTableWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="BookRoomWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="BookingTableWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="BookRoomWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

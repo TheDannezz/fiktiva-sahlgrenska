@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="BookRoomWindow" Height="505" Width="800">
 
-    <StackPanel Margin="50,100,0,0">
+    <StackPanel Margin="50,60,0,0">
         <Label Content="Boka rum" FontSize="28" FontWeight="Bold" Width="145" Margin="50,50,0,50"/>
 
         <StackPanel Orientation="Horizontal">
@@ -31,11 +31,15 @@
                 </ComboBox>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
+            <Label Width="150">Purpose</Label>
+            <TextBox x:Name="Purpose" Width="120"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
             <Label Width="150">Datum</Label>
             <DatePicker x:Name="Date" Width="120"/>
         </StackPanel>
 
-        <Button Content="Boka" Width="84" Margin="0,50,0,0" Click="Button_Click"/>
+        <Button Content="Boka" Width="84" Margin="0,30,0,0" Click="Button_Click"/>
        
     </StackPanel>
 

@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using Sahlgrenska.app.classes;
 
 namespace Sahlgrenska.app
@@ -26,9 +27,13 @@ namespace Sahlgrenska.app
             Patient selectedPatient = (Patient)PatientsComboBox.SelectedItem;
             Equipment selectedEquipment = (Equipment)EquipmentsComboBox.SelectedItem;
             Medicin selectedMedicin = (Medicin)MedicinsComboBox.SelectedItem;
-            var seletedDate = Date.SelectedDate;
+            var selectedDate = Date.SelectedDate;
+            string selectedPurpose = Purpose.Text;
 
-            //hospital.BookRoom(selectedRoom)
+            if (selectedDate == null) return;
+            hospital.BookRoom((DateTime)selectedDate, selectedRoom, selectedPurpose, selectedPatient, selectedEquipment, selectedMedicin);
+
+            Close();
         }
     }
 }

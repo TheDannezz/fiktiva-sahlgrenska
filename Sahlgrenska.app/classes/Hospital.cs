@@ -7,7 +7,8 @@ namespace Sahlgrenska.app.classes
     public class Hospital
     {
         public List<Room> Rooms = new List<Room>() { new Room("101"), new Room("102"), new Room("103"), new Room("104"), new Room("105") };
-        public List<Patient> Patients = new List<Patient>() {
+        public List<Patient> Patients = new List<Patient>()
+        {
             new Patient(1, 123, "Bob",  "Marley"),
             new Patient(2, 124, "Ella",  "Fidjerald"),
             new Patient(3, 125, "Joe",  "Cocke"),
@@ -19,17 +20,21 @@ namespace Sahlgrenska.app.classes
         public List<Booking> Bookings = new List<Booking>() { };
 
 
-        public Booking BookRoom(int room, string patient, string equipment, string medicine, DateTime date)
+        public Booking BookRoom(DateTime dateStart, Room room, string purpose, Patient patient, Equipment equipment, Medicin medicin)
         {
-            var booking = new Booking(111);
-
+            var booking = new Booking();
+            booking.DateStart = dateStart;
+            booking.Room = room;
+            booking.Purpose = purpose;
+            booking.Author = null;
+            booking.Patient = patient;
+            booking.Equipment = equipment;
+            booking.Medicin = medicin;
 
             Bookings.Add(booking);
             return booking;
 
         }
-
-
 
     }
 }

@@ -34,12 +34,17 @@ namespace Sahlgrenska.app
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var bookRoomWindow = new BookRoomWindow(HospitalS);
-            bookRoomWindow.Show();
+            bookRoomWindow.ShowDialog();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             new LoginWindow().ShowDialog();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            new BookingTableWindow(HospitalS).ShowDialog();
         }
     }
 }
