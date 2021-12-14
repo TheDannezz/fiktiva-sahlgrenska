@@ -28,7 +28,7 @@ namespace Sahlgrenska.app
             Medicin selectedMedicin = (Medicin)MedicinsComboBox.SelectedItem;
             var seletedDate = Date.SelectedDate;
 
-            hospital.BookRoom(selectedRoom)
+            //hospital.BookRoom(selectedRoom)
         }
     }
 }
