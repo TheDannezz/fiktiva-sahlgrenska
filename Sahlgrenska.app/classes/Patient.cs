@@ -2,14 +2,17 @@
 {
     public class Patient
     {
-        public string Name;
-        public Patient(string name)
+        public int Id { get; set; }
+        public int SocialSecurityNumber { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
+        public Patient(int id, int socialSecurityNumber, string firstName, string lastName)
         {
-            Name = name;
-        }
-        public override string ToString()
-        {
-            return Name;
+            Id = id;
+            SocialSecurityNumber = socialSecurityNumber;
+            FirstName = firstName;
+            LastName = lastName;
         }
     }
 }
