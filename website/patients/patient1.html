@@ -13,6 +13,7 @@
         <li class="nav"><a href="../patientpage.html">Home</a></li>
         <li class="nav"><a href="#contact">Contact</a></li>
         <li class="nav"><a href="../login.html">Logout</a></li>
+        <li class="alarm"><button class="btn danger" id="alarmbutton">Alarm</button></li>
     </ul>
     <div class="wrapper">
         <div class="column">
@@ -107,7 +108,12 @@
         let todayMonth = todayDate.getMonth()
         let todayYear = todayDate.getFullYear();
         var logdate = " Dag: " + todayDay + " Månad: " + todayMonth + " År: " + todayYear;
+        // Nedan eventListener kallar sendAlarm funktionen när man klickar på alarmknappen.
+        document.getElementById("alarmbutton").addEventListener("click", sendAlarm);
 
+        function sendAlarm() {
+            alert("Patient in distress, doctor is called.");
+        }
         function getSymptom() {
             let input = document.getElementById("symptom").value;
             data = "Nytt symptom: " + input + " Tillagt datum:  \n" + logdate;
