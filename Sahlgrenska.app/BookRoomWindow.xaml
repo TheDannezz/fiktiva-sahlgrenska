@@ -5,54 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sahlgrenska.app"
         mc:Ignorable="d"
-        Title="BookRoomWindow" Height="450" Width="800">
+        Title="BookRoomWindow" Height="505" Width="800">
 
-    <StackPanel>
+    <StackPanel Margin="50,100,0,0">
+        <Label Content="Boka rum" FontSize="28" FontWeight="Bold" Width="145" Margin="50,50,0,50"/>
+
         <StackPanel Orientation="Horizontal">
             <Label Width="150">Room number</Label>
-            <ComboBox Width="120">
-                <ComboBoxItem Content="101"/>
-                <ComboBoxItem Content="102"/>
-                <ComboBoxItem Content="103"/>
-                <ComboBoxItem Content="104"/>
-                <ComboBoxItem Content="105"/>
+            <ComboBox x:Name="RoomComboBox" Width="120">
             </ComboBox>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
             <Label Width="150">Patients namn</Label>
-            <ComboBox Width="120">
-                <ComboBoxItem Content="Bob Marley"/>
-                <ComboBoxItem Content="Bob Dilan"/>
-                <ComboBoxItem Content="Joe Cocker"/>
-                <ComboBoxItem Content="Ella Fidjerald"/>
-                <ComboBoxItem Content="Lui Amstrong"/>
+            <ComboBox x:Name="PatientsComboBox" Width="120">
             </ComboBox>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
             <Label Width="150">Utrustning</Label>
-            <ComboBox Width="120">
-                <ComboBoxItem Content="Röntgen"/>
-                <ComboBoxItem Content="Ultraljud"/>
-                <ComboBoxItem Content="MRI"/>
+            <ComboBox x:Name="EquipmentsComboBox" Width="120">
             </ComboBox>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
             <Label Width="150">Medicin</Label>
-            <ComboBox Width="120">
-                <ComboBoxItem Content="Alvedon"/>
-                <ComboBoxItem Content="Alvedon2"/>
-                <ComboBoxItem Content="Alvedon3"/>
-                <ComboBoxItem Content="Morfin1"/>
-                <ComboBoxItem Content="Morfin2"/>
-            </ComboBox>
+            <ComboBox x:Name="MedicinsComboBox"  Width="120">
+                </ComboBox>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
             <Label Width="150">Datum</Label>
-            <DatePicker Width="120"/>
+            <DatePicker x:Name="Date" Width="120"/>
         </StackPanel>
 
-        <Button Content="Boka" Width="84" Margin="0,50,0,0"/>
-
+        <Button Content="Boka" Width="84" Margin="0,50,0,0" Click="Button_Click"/>
+       
     </StackPanel>
 
 

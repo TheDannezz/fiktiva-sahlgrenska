@@ -8,6 +8,5 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button Content="Boka rum" HorizontalAlignment="Left" Margin="317,176,0,0" VerticalAlignment="Top" Height="41" Width="117" Click="Button_Click"/>
-
     </Grid>
 </Window>

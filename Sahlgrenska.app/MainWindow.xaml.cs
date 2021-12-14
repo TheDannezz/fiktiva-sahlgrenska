@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Sahlgrenska.app.classes;
+
+
 
 namespace Sahlgrenska.app
 {
@@ -20,14 +23,17 @@ namespace Sahlgrenska.app
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Hospital HospitalS;
+
         public MainWindow()
         {
+            HospitalS = new Hospital();
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var bookRoomWindow = new BookRoomWindow();
+            var bookRoomWindow = new BookRoomWindow(HospitalS);
             bookRoomWindow.Show();
         }
     }

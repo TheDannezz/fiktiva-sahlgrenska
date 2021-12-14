@@ -1,9 +1,10 @@
-﻿namespace Sahlgrenska.app.classes
+﻿
+namespace Sahlgrenska.app.classes
 {
-    public class Patient
+    public class Equipment
     {
         public string Name;
-        public Patient(string name)
+        public Equipment (string name)
         {
             Name = name;
         }
