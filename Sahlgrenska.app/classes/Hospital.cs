@@ -12,7 +12,7 @@ namespace Sahlgrenska.app.classes
             new Patient(2, 124, "Ella",  "Fidjerald"),
             new Patient(3, 125, "Joe",  "Cocke"),
             new Patient(4, 126, "Lui",  "Amstrong"),
-            new Patient(5, 127, "Jenis",  "Joplin")      
+            new Patient(5, 127, "Jenis",  "Joplin")
         };
         public List<Equipment> Equipments = new List<Equipment> { new Equipment("MRI"), new Equipment("Ultrljud"), new Equipment("Röntgen") };
         public List<Medicin> Medicins = new List<Medicin> { new Medicin("Alvedon1"), new Medicin("Alvedon2"), new Medicin("Alvedon3"), new Medicin("Morfin1"), new Medicin("Morfin2") };
@@ -29,7 +29,11 @@ namespace Sahlgrenska.app.classes
 
         }
 
-
-
+        //En dictinary för sjukdom och conditions. {Symptom, sjukdom} skriver på engelska för enkelhetens skull.
+        public Dictionary<string, string> conditions = new Dictionary<string, string>()
+        { 
+        {"Wheezing","Asthma "},{"Fever","Influenza"},{"Memory loss","Alzheimers"},
+        {"Arrhythmia","Heart attack"},{"Rash","Chicken Pox"},{"Coughing","Common Cold"},{"Lethargy","Viral Meningitis"}
+        };
     }
 }
