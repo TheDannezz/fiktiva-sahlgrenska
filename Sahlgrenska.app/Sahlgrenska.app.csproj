@@ -6,4 +6,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="loginBackground.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="loginBackground.jpg" />
+  </ItemGroup>
+
 </Project>

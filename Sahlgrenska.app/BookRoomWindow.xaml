@@ -6,13 +6,22 @@
         xmlns:local="clr-namespace:Sahlgrenska.app"
         mc:Ignorable="d"
         Title="BookRoomWindow" Height="505" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/images/gubbe.jpg" Stretch="Uniform"/>
+    </Window.Background>
 
     <StackPanel Margin="50,60,0,0">
-        <Label Content="Boka rum" FontSize="28" FontWeight="Bold" Width="145" Margin="50,50,0,50"/>
+        <Label Content="Boka rum" FontSize="28" FontWeight="Bold" Width="146" Margin="50,50,0,50" HorizontalAlignment="Left"/>
 
         <StackPanel Orientation="Horizontal">
             <Label Width="150">Room number</Label>
             <ComboBox x:Name="RoomComboBox" Width="120">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFA46F6F" Offset="1"/>
+                    </LinearGradientBrush>
+                </ComboBox.Background>
             </ComboBox>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
@@ -39,7 +48,7 @@
             <DatePicker x:Name="Date" Width="120"/>
         </StackPanel>
 
-        <Button Content="Boka" Width="84" Margin="0,30,0,0" Click="Button_Click"/>
+        <Button Content="Boka" Width="84" Margin="0,30,0,0" Click="Button_Click" Background="#FFA46F6F"/>
        
     </StackPanel>
 
