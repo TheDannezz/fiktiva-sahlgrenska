@@ -18,6 +18,9 @@ namespace Sahlgrenska.app.classes
         public List<Equipment> Equipments = new List<Equipment> { new Equipment("MRI"), new Equipment("Ultrljud"), new Equipment("Röntgen") };
         public List<Medicin> Medicins = new List<Medicin> { new Medicin("Alvedon1"), new Medicin("Alvedon2"), new Medicin("Alvedon3"), new Medicin("Morfin1"), new Medicin("Morfin2") };
         public List<Booking> Bookings = new List<Booking>() { };
+        public List<OrderEquipment> EquipmentOrders = new List<OrderEquipment>() {};
+        public List<OrderMedicin> MedicinOrders = new List<OrderMedicin>() { };
+
 
 
         public Booking BookRoom(DateTime dateStart, Room room, string purpose, Patient patient, Equipment equipment, Medicin medicin)
@@ -33,6 +36,32 @@ namespace Sahlgrenska.app.classes
 
             Bookings.Add(booking);
             return booking;
+        }
+
+        public OrderEquipment CreateOrderE(Equipment equipment, Room room, int amount, DateTime availableDate)
+        {
+            var order = new OrderEquipment();
+            order.Equipment = equipment;
+            order.Room = room;
+            order.Amount = amount;
+            order.Author = null;
+            order.AvailableDate = availableDate;
+
+            EquipmentOrders.Add(order);
+            return order;
+
+        }
+
+        public OrderMedicin CreateOrderM(Medicin medicin, int amountM, DateTime availableDateM)
+        {
+            var orderM = new OrderMedicin();
+            orderM.Medicin = medicin;
+            orderM.Amount = amountM;
+            orderM.Author = null;
+            orderM.AvailableDate = availableDateM;
+
+            MedicinOrders.Add(orderM);
+            return orderM;
 
         }
 

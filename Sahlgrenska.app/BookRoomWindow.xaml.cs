@@ -35,5 +35,5 @@ namespace Sahlgrenska.app
 
             Close();
         }
-    }
+    } 
 }

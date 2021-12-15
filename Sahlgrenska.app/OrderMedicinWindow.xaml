@@ -1,0 +1,33 @@
+﻿<Window x:Class="Sahlgrenska.app.OrderMedicinWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sahlgrenska.app"
+        mc:Ignorable="d"
+        Title="OrderMwedicinWindow" Height="505" Width="800">
+    
+    <StackPanel Margin="50,60,0,0">
+        <Label Content="Beställa medicin" FontSize="28" FontWeight="Bold" Width="262" Margin="50,50,0,50"/>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Width="150">Medicin</Label>
+            <ComboBox x:Name="MedicinComboBox" Width="120">
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="150">Antal</Label>
+            <TextBox x:Name="Amount" Width="120"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="150">Available Datum</Label>
+            <DatePicker x:Name="Date" Width="120"/>
+        </StackPanel>
+
+        <Button Content="Bekräfta" Width="84" Margin="0,30,0,0" Click="Button_Click"  />
+
+
+
+
+    </StackPanel>
+</Window>

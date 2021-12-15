@@ -7,7 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        <Button Content="Boka rum" HorizontalAlignment="Left" Margin="317,176,0,0" VerticalAlignment="Top" Height="41" Width="117" Click="Button_Click"/>
-        <Button Content="Boknings lista" HorizontalAlignment="Left" Margin="317,257,0,0" VerticalAlignment="Top" Height="37" Width="117" Click="Button_Click_1"/>
+        <Button Content="Boka rum" HorizontalAlignment="Left" Margin="317,76,0,0" VerticalAlignment="Top" Height="41" Width="117" Click="Button_Click"/>
+        <Button Content="Boknings lista" HorizontalAlignment="Left" Margin="317,157,0,0" VerticalAlignment="Top" Height="37" Width="117" Click="Button_Click_1"/>
+        <Button Content="Beställa utrustning" HorizontalAlignment="Left" Margin="317,237,0,0" VerticalAlignment="Top" Height="41" Width="117" Click="Button_Click_2" />
+        <Button Content="Beställa medicin" HorizontalAlignment="Left" Margin="506,237,0,0" VerticalAlignment="Top" Height="41" Width="117" Click="Button_Click_4"  />
+        <Button Content="Beställnings lista&#xD;&#xA;(utrustning)" HorizontalAlignment="Left" Margin="317,315,0,0" VerticalAlignment="Top" Height="37" Width="117" Click="Button_Click_3" />
+        <Button Content="Beställnings lista&#xD;&#xA;(medicin)" HorizontalAlignment="Left" Margin="506,315,0,0" VerticalAlignment="Top" Height="37" Width="117" Click="Button_Click_5"  />
+
     </Grid>
 </Window>

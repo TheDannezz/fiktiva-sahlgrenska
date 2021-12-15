@@ -14,15 +14,14 @@ using Sahlgrenska.app.classes;
 namespace Sahlgrenska.app
 {
     /// <summary>
-    /// Interaction logic for BookingTableWindow.xaml
+    /// Interaction logic for OETableWindow.xaml
     /// </summary>
-    public partial class BookingTableWindow : Window
+    public partial class OETableWindow : Window
     {
-        public BookingTableWindow(Hospital hospital)
+        public OETableWindow(Hospital hospital)
         {
             InitializeComponent();
-            BookingTable.ItemsSource = hospital.Bookings;
+            OETable.ItemsSource = hospital.EquipmentOrders;
         }
     }
 }
- 

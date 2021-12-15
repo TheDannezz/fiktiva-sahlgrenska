@@ -13,6 +13,18 @@
     <Compile Update="BookRoomWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="OETableWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OMTableWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OrderEquipmentWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OrderMedicinWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="BookingTableWindow.xaml">
@@ -25,6 +37,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OETableWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OMTableWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OrderEquipmentWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OrderMedicinWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

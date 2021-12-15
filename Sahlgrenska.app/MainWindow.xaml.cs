@@ -46,5 +46,28 @@ namespace Sahlgrenska.app
         {
             new BookingTableWindow(HospitalS).ShowDialog();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var orderEquipmentWindow = new OrderEquipmentWindow(HospitalS);
+            orderEquipmentWindow.ShowDialog();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            new OETableWindow(HospitalS).ShowDialog();
+
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            var orderMedicinWindow = new OrderMedicinWindow(HospitalS);
+            orderMedicinWindow.ShowDialog();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            new OMTableWindow(HospitalS).ShowDialog();
+        }
     }
 }
