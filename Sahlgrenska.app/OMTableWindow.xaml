@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Sahlgrenska.app"
         mc:Ignorable="d"
         Title="OMTableWindow" Height="450" Width="800">
-    <DataGrid AutoGenerateColumns="True" x:Name="OMTable">
+    <DataGrid AutoGenerateColumns="True" x:Name="OMTable" Background="#FFA46F6F">
 
     </DataGrid>
 </Window>

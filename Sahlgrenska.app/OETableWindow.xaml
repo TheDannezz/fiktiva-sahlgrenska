@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Sahlgrenska.app"
         mc:Ignorable="d"
         Title="OETableWindow" Height="450" Width="800">
-    <DataGrid AutoGenerateColumns="True" x:Name="OETable">
+    <DataGrid AutoGenerateColumns="True" x:Name="OETable" Background="#FFA46F6F">
 
     </DataGrid>
     
