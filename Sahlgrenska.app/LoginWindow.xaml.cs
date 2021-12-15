@@ -22,21 +22,27 @@ namespace Sahlgrenska.app
     {
         string username = "oopa21";
         string password = "1234";
+        
         public LoginWindow()
         {
             InitializeComponent();
         }
-
+        //Checkbox not implemented yet.
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
 
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
+
             if ((usernamebox1.Text == username) && (passwordbox1.Text == password))
             {
                 errormessage.Text ="Login Success";
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                LoginWindow loginWindow = new LoginWindow();
+                this.Close();
             }
             else if (usernamebox1.Text.Length == 0 || passwordbox1.Text.Length == 0)
             {

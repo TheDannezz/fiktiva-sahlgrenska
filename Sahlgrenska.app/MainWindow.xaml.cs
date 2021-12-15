@@ -25,6 +25,10 @@ namespace Sahlgrenska.app
     {
         public Hospital HospitalS;
 
+        private void LoginButton()
+        {
+
+        }
         public MainWindow()
         {
             HospitalS = new Hospital();
@@ -39,7 +43,7 @@ namespace Sahlgrenska.app
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            new LoginWindow().ShowDialog();
+            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

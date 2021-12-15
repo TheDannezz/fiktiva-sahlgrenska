@@ -65,11 +65,19 @@ namespace Sahlgrenska.app.classes
 
         }
 
-        //En dictinary för sjukdom och conditions. {Symptom, sjukdom} skriver på engelska för enkelhetens skull.
+        //En dictionary för sjukdom och conditions. {Symptom, sjukdom} skriver på engelska för enkelhetens skull.
         public Dictionary<string, string> conditions = new Dictionary<string, string>()
         { 
         {"Wheezing","Asthma "},{"Fever","Influenza"},{"Memory loss","Alzheimers"},
         {"Arrhythmia","Heart attack"},{"Rash","Chicken Pox"},{"Coughing","Common Cold"},{"Lethargy","Viral Meningitis"}
+           /* public string Diagnostic()
+            {
+                string search = Console.ReadLine();
+                string keyreturn ="default";
+                bool hasValue = conditions.TryGetValue(search, out keyreturn);
+            
+            }*/
         };
+
     }
 }
