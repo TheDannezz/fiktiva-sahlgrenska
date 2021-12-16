@@ -6,14 +6,9 @@
         xmlns:local="clr-namespace:Sahlgrenska.app"
         mc:Ignorable="d"
         Title="OrderMwedicinWindow" Height="505" Width="800">
-    <Window.Background>
-        <ImageBrush ImageSource="/loginBackground.jpg"/>
-    </Window.Background>
 
     <StackPanel Margin="50,60,0,0">
-        <StackPanel.Background>
-            <ImageBrush ImageSource="/images/loginBackground.jpg"/>
-        </StackPanel.Background>
+     
         <Label Content="Beställa medicin" FontSize="28" FontWeight="Bold" Width="262" Margin="50,50,0,50"/>
 
         <StackPanel Orientation="Horizontal">

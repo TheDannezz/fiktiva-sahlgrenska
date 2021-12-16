@@ -21,7 +21,7 @@ namespace Sahlgrenska.app
         public OMTableWindow(Hospital hospital)
         {
             InitializeComponent();
-            OMTable.ItemsSource = hospital.EquipmentOrders;
+            OMTable.ItemsSource = hospital.MedicinOrders;
         }
     }
 }
